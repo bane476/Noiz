@@ -1,0 +1,121 @@
+/* --- Base & Fonts --- */
+.root {
+    -fx-background-color: #1e1e1e; /* Dark grey background */
+    -fx-font-family: "Inter", "Segoe UI", sans-serif; /* Modern font */
+}
+
+.label {
+    -fx-text-fill: #e0e0e0; /* Light grey text */
+    -fx-font-size: 14px;
+}
+
+/* --- Buttons --- */
+.button, .toggle-button {
+    -fx-background-color: #333333;
+    -fx-text-fill: #e0e0e0;
+    -fx-border-width: 0;
+    -fx-background-radius: 8; /* Rounded corners */
+    -fx-padding: 8 16;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-transition: -fx-background-color 0.3s;
+}
+
+.button:hover, .toggle-button:hover {
+    -fx-background-color: #444444; /* Lighter on hover */
+}
+
+.button:pressed, .toggle-button:pressed, .toggle-button:selected {
+    -fx-background-color: #0078d7; /* Accent color for pressed/selected */
+    -fx-text-fill: white;
+}
+
+/* --- Sliders --- */
+.slider .track {
+    -fx-background-color: #444444;
+    -fx-background-radius: 4;
+}
+
+.slider .thumb {
+    -fx-background-color: #0078d7;
+    -fx-background-radius: 10;
+}
+
+/* --- TableView (Song List) --- */
+.table-view {
+    -fx-background-color: #2a2a2a;
+    -fx-control-inner-background: #2a2a2a;
+    -fx-selection-bar: #0078d7;
+    -fx-selection-bar-non-focused: #005a9e;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #1e1e1e;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: #444444;
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 10;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #cccccc;
+    -fx-border-color: transparent;
+    -fx-padding: 12px;
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: -fx-selection-bar;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: white;
+}
+
+/* --- ListView (Playlist) --- */
+.list-view {
+    -fx-background-color: #2a2a2a;
+    -fx-control-inner-background: #2a2a2a;
+}
+
+.list-cell {
+    -fx-text-fill: #cccccc;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+}
+
+.list-cell:filled:selected, .list-cell:filled:selected:focused {
+    -fx-background-color: #0078d7;
+    -fx-text-fill: white;
+}
+
+/* --- TextField (Search) --- */
+.text-field {
+    -fx-background-color: #333333;
+    -fx-text-fill: #e0e0e0;
+    -fx-background-radius: 8;
+    -fx-border-width: 0;
+    -fx-prompt-text-fill: #888888;
+    -fx-font-size: 14px;
+    -fx-padding: 8 12;
+}
+
+/* --- Scrollbars --- */
+.scroll-bar:vertical .track,
+.scroll-bar:horizontal .track {
+    -fx-background-color: #2a2a2a;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #555555;
+    -fx-background-radius: 6;
+}
